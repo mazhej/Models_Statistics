@@ -24,20 +24,6 @@ class statistics():
         self.count_output = 0
 
     def hook_fn(self,module,input,output):  
-        
-        if type(input) == tuple:
-            for i in range(len(input[0])):
-                if torch.min(input[0][i]) < self.min_input:  
-                    self.min_input = torch.min(input[0][i])
-                if torch.max(input[0][i]) > self.max_input: 
-                    self.max_input = torch.max(input[0][i])
-            for b in range(len(input[0])):
-                self.sum_min_input += torch.min(input[0][b])  
-                self.sum_max_input += torch.max(input[0][b])
-                self.count_input += 1
-            self.avg_min_input = self.sum_min_input / self.count_input 
-            self.avg_max_input =  self.sum_max_input / self.count_input
-            
         if (not isinstance(module,torchvision.ops.feature_pyramid_network.LastLevelMaxPool)) and (not isinstance(module,torchvision.ops.feature_pyramid_network.FeaturePyramidNetwork)) and (not isinstance(module,torchvision.models.detection.backbone_utils.BackboneWithFPN)) and (not isinstance(module,GeneralizedRCNNTransform))and (not isinstance(module,torchvision.models.detection.roi_heads.RoIHeads))and (not isinstance(module,torchvision.models.detection.mask_rcnn.MaskRCNN)):
         
             if type(input) == tuple or type(input) == list:                   
@@ -86,6 +72,8 @@ class statistics():
                     self.avg_min_output = self.sum_min_output /self.count_output
                     self.avg_max_output = self.sum_max_output / self.count_output
 
+
+
             elif isinstance(output,tuple):
                 for i in range(len(output)):                
                     for j in range(len(output[i])):
@@ -100,6 +88,5 @@ class statistics():
                         self.min_output = torch.min(output[i])
                     if torch.max(output[i]) > self.max_output:
                         self.max_output = torch.max(output[i])
-                        
     def close(self):
         self.hook.remove()
