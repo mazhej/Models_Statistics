@@ -102,8 +102,8 @@ def dg_main(args):
     device = torch.device(args.device)
 
     dataset_test, num_classes = get_dataset(args.dataset, "val", get_transform(train=False), args.data_path)  
-    test_sampler = torch.utils.data.RandomSampler(dataset_test,replacement=True,num_samples=3)
-    #test_sampler = torch.utils.data.SequentialSampler(dataset_test)
+    #test_sampler = torch.utils.data.RandomSampler(dataset_test,replacement=True,num_samples=3)
+    test_sampler = torch.utils.data.SequentialSampler(dataset_test)
     
 
 

@@ -16,8 +16,8 @@ import torchvision.transforms as transforms
 import torchvision.datasets as datasets
 import torchvision.models as models
 
-#from Stat_Hook import *
-from Stat_Hook_Obj_Dec import *
+from Stat_Hook_Classification import *
+#from Stat_Hook_Obj_Dec import *
 
 #getting all the pytorch models name
 model_names = sorted(name for name in models.__dict__
@@ -88,8 +88,7 @@ def main_worker(gpu, ngpus_per_node, args):
                                  weight_decay=args.weight_decay)
 
     cudnn.benchmark = True
-
-    # Data loading code(Validation)
+    # Data loading code(Validation)                
     valdir = os.path.join(args.data, 'val')
     normalize = transforms.Normalize(mean=[0.485, 0.456, 0.406],
                                      std=[0.229, 0.224, 0.225])
@@ -105,7 +104,7 @@ def main_worker(gpu, ngpus_per_node, args):
         num_workers=args.workers, pin_memory=True)
 
     if args.evaluate:
-        validate(val_loader, model, criterion, args)
+        validate(val_loader, model, criterion, args)     
         return
 
 def validate(val_loader, model,criterion,args):
