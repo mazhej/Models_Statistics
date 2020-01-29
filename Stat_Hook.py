@@ -18,7 +18,7 @@ class statistics():
         self.avg_max_output = 0 
         self.count = 0
         
-    def hook_fn(self, module, input, output):
+    def hook_fn(self, module, input, output):     type(input) 
         
         if torch.min(input[0]) < self.min_input:
             self.min_input = torch.min(input[0])

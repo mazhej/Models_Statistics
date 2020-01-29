@@ -1,0 +1,1530 @@
+""[
+{
+"min_input": Infinity,
+"max_input": -Infinity,
+"min_output": Infinity,
+"max_output": -Infinity,
+"avg_min_input": 0.0,
+"avg_max_input": 0.0,
+"avg_min_output": 0.0,
+"avg_max_output": 0.0
+}
+]"transform"[
+{
+"min_input": Infinity,
+"max_input": -Infinity,
+"min_output": Infinity,
+"max_output": -Infinity,
+"avg_min_input": 0.0,
+"avg_max_input": 0.0,
+"avg_min_output": 0.0,
+"avg_max_output": 0.0
+}
+]"backbone"[
+{
+"min_input": -2.1179039478302,
+"max_input": 2.640000104904175,
+"min_output": Infinity,
+"max_output": -Infinity,
+"avg_min_input": -2.1179041862487793,
+"avg_max_input": 2.6399762630462646,
+"avg_min_output": 0.0,
+"avg_max_output": 0.0
+}
+]"backbone.body"[
+{
+"min_input": -2.1179039478302,
+"max_input": 2.640000104904175,
+"min_output": Infinity,
+"max_output": -Infinity,
+"avg_min_input": -2.1179041862487793,
+"avg_max_input": 2.6399762630462646,
+"avg_min_output": 0.0,
+"avg_max_output": 0.0
+}
+]"backbone.body.conv1"[
+{
+"min_input": -2.1179039478302,
+"max_input": 2.640000104904175,
+"min_output": -21.209884643554688,
+"max_output": 22.98773956298828,
+"avg_min_input": -2.1179041862487793,
+"avg_max_input": 2.6399762630462646,
+"avg_min_output": -19.79288101196289,
+"avg_max_output": 21.644874572753906
+}
+]"backbone.body.relu"[
+{
+"min_input": 0.0,
+"max_input": 3.2930033206939697,
+"min_output": 0.0,
+"max_output": 3.2930033206939697,
+"avg_min_input": 0.0,
+"avg_max_input": 3.0456905364990234,
+"avg_min_output": 0.0,
+"avg_max_output": 3.0456905364990234
+}
+]"backbone.body.maxpool"[
+{
+"min_input": 0.0,
+"max_input": 3.2930033206939697,
+"min_output": 0.0,
+"max_output": 3.2930033206939697,
+"avg_min_input": 0.0,
+"avg_max_input": 3.0456905364990234,
+"avg_min_output": 0.0,
+"avg_max_output": 3.0456905364990234
+}
+]"backbone.body.layer1"[
+{
+"min_input": 0.0,
+"max_input": 3.2930033206939697,
+"min_output": 0.0,
+"max_output": 3.245561361312866,
+"avg_min_input": 0.0,
+"avg_max_input": 3.0456905364990234,
+"avg_min_output": 0.0,
+"avg_max_output": 2.933600902557373
+}
+]"backbone.body.layer1.0"[
+{
+"min_input": 0.0,
+"max_input": 3.2930033206939697,
+"min_output": 0.0,
+"max_output": 2.5053629875183105,
+"avg_min_input": 0.0,
+"avg_max_input": 3.0456905364990234,
+"avg_min_output": 0.0,
+"avg_max_output": 2.1350936889648438
+}
+]"backbone.body.layer1.0.conv1"[
+{
+"min_input": 0.0,
+"max_input": 3.2930033206939697,
+"min_output": -3.2942323684692383,
+"max_output": 3.3081068992614746,
+"avg_min_input": 0.0,
+"avg_max_input": 3.0456905364990234,
+"avg_min_output": -2.9329631328582764,
+"avg_max_output": 2.980877637863159
+}
+]"backbone.body.layer1.0.conv2"[
+{
+"min_input": 0.0,
+"max_input": 1.5264993906021118,
+"min_output": -2.0618391036987305,
+"max_output": 1.8758137226104736,
+"avg_min_input": 0.0,
+"avg_max_input": 1.3164803981781006,
+"avg_min_output": -1.9200900793075562,
+"avg_max_output": 1.73776376247406
+}
+]"backbone.body.layer1.0.conv3"[
+{
+"min_input": 0.0,
+"max_input": 1.5478795766830444,
+"min_output": -0.6922217011451721,
+"max_output": 0.6464828252792358,
+"avg_min_input": 0.0,
+"avg_max_input": 1.4630892276763916,
+"avg_min_output": -0.6244866251945496,
+"avg_max_output": 0.6061457395553589
+}
+]"backbone.body.layer1.0.relu"[
+{
+"min_input": 0.0,
+"max_input": 2.5053629875183105,
+"min_output": 0.0,
+"max_output": 2.5053629875183105,
+"avg_min_input": 0.0,
+"avg_max_input": 1.6382211446762085,
+"avg_min_output": 0.0,
+"avg_max_output": 1.6382211446762085
+}
+]"backbone.body.layer1.0.downsample"[
+{
+"min_input": 0.0,
+"max_input": 3.2930033206939697,
+"min_output": -3.0169365406036377,
+"max_output": 2.371807336807251,
+"avg_min_input": 0.0,
+"avg_max_input": 3.0456905364990234,
+"avg_min_output": -3.0018746852874756,
+"avg_max_output": 2.0725529193878174
+}
+]"backbone.body.layer1.0.downsample.0"[
+{
+"min_input": 0.0,
+"max_input": 3.2930033206939697,
+"min_output": -2.5422780513763428,
+"max_output": 4.327365398406982,
+"avg_min_input": 0.0,
+"avg_max_input": 3.0456905364990234,
+"avg_min_output": -2.4915826320648193,
+"avg_max_output": 4.057395935058594
+}
+]"backbone.body.layer1.1"[
+{
+"min_input": 0.0,
+"max_input": 2.5053629875183105,
+"min_output": 0.0,
+"max_output": 3.3957648277282715,
+"avg_min_input": 0.0,
+"avg_max_input": 2.1350936889648438,
+"avg_min_output": 0.0,
+"avg_max_output": 2.879365921020508
+}
+]"backbone.body.layer1.1.conv1"[
+{
+"min_input": 0.0,
+"max_input": 2.5053629875183105,
+"min_output": -1.1785180568695068,
+"max_output": 1.3253962993621826,
+"avg_min_input": 0.0,
+"avg_max_input": 2.1350936889648438,
+"avg_min_output": -1.1021665334701538,
+"avg_max_output": 1.188387393951416
+}
+]"backbone.body.layer1.1.conv2"[
+{
+"min_input": 0.0,
+"max_input": 1.3110343217849731,
+"min_output": -1.051822304725647,
+"max_output": 0.962824821472168,
+"avg_min_input": 0.0,
+"avg_max_input": 1.2483104467391968,
+"avg_min_output": -0.9623185992240906,
+"avg_max_output": 0.932041347026825
+}
+]"backbone.body.layer1.1.conv3"[
+{
+"min_input": 0.0,
+"max_input": 2.2479116916656494,
+"min_output": -0.5018543601036072,
+"max_output": 0.4896017909049988,
+"avg_min_input": 0.0,
+"avg_max_input": 1.7806692123413086,
+"avg_min_output": -0.46093589067459106,
+"avg_max_output": 0.4652728736400604
+}
+]"backbone.body.layer1.1.relu"[
+{
+"min_input": 0.0,
+"max_input": 3.3957648277282715,
+"min_output": 0.0,
+"max_output": 3.3957648277282715,
+"avg_min_input": 0.0,
+"avg_max_input": 1.9694485664367676,
+"avg_min_output": 0.0,
+"avg_max_output": 1.9694485664367676
+}
+]"backbone.body.layer1.2"[
+{
+"min_input": 0.0,
+"max_input": 3.3957648277282715,
+"min_output": 0.0,
+"max_output": 3.245561361312866,
+"avg_min_input": 0.0,
+"avg_max_input": 2.879365921020508,
+"avg_min_output": 0.0,
+"avg_max_output": 2.933600902557373
+}
+]"backbone.body.layer1.2.conv1"[
+{
+"min_input": 0.0,
+"max_input": 3.3957648277282715,
+"min_output": -1.2113319635391235,
+"max_output": 1.2187906503677368,
+"avg_min_input": 0.0,
+"avg_max_input": 2.879365921020508,
+"avg_min_output": -1.1309514045715332,
+"avg_max_output": 1.046928882598877
+}
+]"backbone.body.layer1.2.conv2"[
+{
+"min_input": 0.0,
+"max_input": 1.3893508911132812,
+"min_output": -1.1466630697250366,
+"max_output": 1.0407323837280273,
+"avg_min_input": 0.0,
+"avg_max_input": 1.3036978244781494,
+"avg_min_output": -1.0197415351867676,
+"avg_max_output": 1.0047082901000977
+}
+]"backbone.body.layer1.2.conv3"[
+{
+"min_input": 0.0,
+"max_input": 2.2562878131866455,
+"min_output": -0.5252314805984497,
+"max_output": 0.4631674885749817,
+"avg_min_input": 0.0,
+"avg_max_input": 2.1740996837615967,
+"avg_min_output": -0.47962623834609985,
+"avg_max_output": 0.4282970130443573
+}
+]"backbone.body.layer1.2.relu"[
+{
+"min_input": 0.0,
+"max_input": 3.245561361312866,
+"min_output": 0.0,
+"max_output": 3.245561361312866,
+"avg_min_input": 0.0,
+"avg_max_input": 2.1371328830718994,
+"avg_min_output": 0.0,
+"avg_max_output": 2.1371328830718994
+}
+]"backbone.body.layer2"[
+{
+"min_input": 0.0,
+"max_input": 3.245561361312866,
+"min_output": 0.0,
+"max_output": 14.49044418334961,
+"avg_min_input": 0.0,
+"avg_max_input": 2.933600902557373,
+"avg_min_output": 0.0,
+"avg_max_output": 13.853063583374023
+}
+]"backbone.body.layer2.0"[
+{
+"min_input": 0.0,
+"max_input": 3.245561361312866,
+"min_output": 0.0,
+"max_output": 9.536955833435059,
+"avg_min_input": 0.0,
+"avg_max_input": 2.933600902557373,
+"avg_min_output": 0.0,
+"avg_max_output": 8.594404220581055
+}
+]"backbone.body.layer2.0.conv1"[
+{
+"min_input": 0.0,
+"max_input": 3.245561361312866,
+"min_output": -1.6314440965652466,
+"max_output": 2.363802671432495,
+"avg_min_input": 0.0,
+"avg_max_input": 2.933600902557373,
+"avg_min_output": -1.5322816371917725,
+"avg_max_output": 2.232290744781494
+}
+]"backbone.body.layer2.0.conv2"[
+{
+"min_input": 0.0,
+"max_input": 3.439535617828369,
+"min_output": -4.166488170623779,
+"max_output": 3.615278720855713,
+"avg_min_input": 0.0,
+"avg_max_input": 3.286820888519287,
+"avg_min_output": -3.547520399093628,
+"avg_max_output": 3.16485857963562
+}
+]"backbone.body.layer2.0.conv3"[
+{
+"min_input": 0.0,
+"max_input": 4.8540496826171875,
+"min_output": -1.5280358791351318,
+"max_output": 2.1316275596618652,
+"avg_min_input": 0.0,
+"avg_max_input": 4.384259223937988,
+"avg_min_output": -1.4013417959213257,
+"avg_max_output": 2.0936851501464844
+}
+]"backbone.body.layer2.0.relu"[
+{
+"min_input": 0.0,
+"max_input": 9.536955833435059,
+"min_output": 0.0,
+"max_output": 9.536955833435059,
+"avg_min_input": 0.0,
+"avg_max_input": 5.421827793121338,
+"avg_min_output": 0.0,
+"avg_max_output": 5.421827793121338
+}
+]"backbone.body.layer2.0.downsample"[
+{
+"min_input": 0.0,
+"max_input": 3.245561361312866,
+"min_output": -1.4678646326065063,
+"max_output": 4.151638031005859,
+"avg_min_input": 0.0,
+"avg_max_input": 2.933600902557373,
+"avg_min_output": -1.3380283117294312,
+"avg_max_output": 3.595482587814331
+}
+]"backbone.body.layer2.0.downsample.0"[
+{
+"min_input": 0.0,
+"max_input": 3.245561361312866,
+"min_output": -1.5124289989471436,
+"max_output": 1.9514625072479248,
+"avg_min_input": 0.0,
+"avg_max_input": 2.933600902557373,
+"avg_min_output": -1.1778274774551392,
+"avg_max_output": 1.8504772186279297
+}
+]"backbone.body.layer2.1"[
+{
+"min_input": 0.0,
+"max_input": 9.536955833435059,
+"min_output": 0.0,
+"max_output": 11.289225578308105,
+"avg_min_input": 0.0,
+"avg_max_input": 8.594404220581055,
+"avg_min_output": 0.0,
+"avg_max_output": 10.609434127807617
+}
+]"backbone.body.layer2.1.conv1"[
+{
+"min_input": 0.0,
+"max_input": 9.536955833435059,
+"min_output": -3.942031145095825,
+"max_output": 3.732865571975708,
+"avg_min_input": 0.0,
+"avg_max_input": 8.594404220581055,
+"avg_min_output": -3.132664680480957,
+"avg_max_output": 3.5543813705444336
+}
+]"backbone.body.layer2.1.conv2"[
+{
+"min_input": 0.0,
+"max_input": 3.068539619445801,
+"min_output": -3.5328872203826904,
+"max_output": 3.6860435009002686,
+"avg_min_input": 0.0,
+"avg_max_input": 2.990696668624878,
+"avg_min_output": -3.0843167304992676,
+"avg_max_output": 3.2097740173339844
+}
+]"backbone.body.layer2.1.conv3"[
+{
+"min_input": 0.0,
+"max_input": 4.408514499664307,
+"min_output": -2.3527989387512207,
+"max_output": 2.5622079372406006,
+"avg_min_input": 0.0,
+"avg_max_input": 4.079531669616699,
+"avg_min_output": -2.0102157592773438,
+"avg_max_output": 2.181673765182495
+}
+]"backbone.body.layer2.1.relu"[
+{
+"min_input": 0.0,
+"max_input": 11.289225578308105,
+"min_output": 0.0,
+"max_output": 11.289225578308105,
+"avg_min_input": 0.0,
+"avg_max_input": 5.8932204246521,
+"avg_min_output": 0.0,
+"avg_max_output": 5.8932204246521
+}
+]"backbone.body.layer2.2"[
+{
+"min_input": 0.0,
+"max_input": 11.289225578308105,
+"min_output": 0.0,
+"max_output": 14.139331817626953,
+"avg_min_input": 0.0,
+"avg_max_input": 10.609434127807617,
+"avg_min_output": 0.0,
+"avg_max_output": 13.772178649902344
+}
+]"backbone.body.layer2.2.conv1"[
+{
+"min_input": 0.0,
+"max_input": 11.289225578308105,
+"min_output": -3.5967180728912354,
+"max_output": 3.941601276397705,
+"avg_min_input": 0.0,
+"avg_max_input": 10.609434127807617,
+"avg_min_output": -3.5256199836730957,
+"avg_max_output": 3.644296646118164
+}
+]"backbone.body.layer2.2.conv2"[
+{
+"min_input": 0.0,
+"max_input": 6.251136302947998,
+"min_output": -3.2870585918426514,
+"max_output": 4.3882904052734375,
+"avg_min_input": 0.0,
+"avg_max_input": 5.394454002380371,
+"avg_min_output": -3.182065010070801,
+"avg_max_output": 3.6666419506073
+}
+]"backbone.body.layer2.2.conv3"[
+{
+"min_input": 0.0,
+"max_input": 6.0190629959106445,
+"min_output": -1.5245205163955688,
+"max_output": 1.8671033382415771,
+"avg_min_input": 0.0,
+"avg_max_input": 5.368171691894531,
+"avg_min_output": -1.426685094833374,
+"avg_max_output": 1.7637689113616943
+}
+]"backbone.body.layer2.2.relu"[
+{
+"min_input": 0.0,
+"max_input": 14.139331817626953,
+"min_output": 0.0,
+"max_output": 14.139331817626953,
+"avg_min_input": 0.0,
+"avg_max_input": 8.178268432617188,
+"avg_min_output": 0.0,
+"avg_max_output": 8.178268432617188
+}
+]"backbone.body.layer2.3"[
+{
+"min_input": 0.0,
+"max_input": 14.139331817626953,
+"min_output": 0.0,
+"max_output": 14.49044418334961,
+"avg_min_input": 0.0,
+"avg_max_input": 13.772178649902344,
+"avg_min_output": 0.0,
+"avg_max_output": 13.853063583374023
+}
+]"backbone.body.layer2.3.conv1"[
+{
+"min_input": 0.0,
+"max_input": 14.139331817626953,
+"min_output": -3.29624342918396,
+"max_output": 4.972424030303955,
+"avg_min_input": 0.0,
+"avg_max_input": 13.772178649902344,
+"avg_min_output": -3.2135844230651855,
+"avg_max_output": 4.634548187255859
+}
+]"backbone.body.layer2.3.conv2"[
+{
+"min_input": 0.0,
+"max_input": 7.44608736038208,
+"min_output": -3.0514702796936035,
+"max_output": 3.363938808441162,
+"avg_min_input": 0.0,
+"avg_max_input": 6.609910011291504,
+"avg_min_output": -2.9863460063934326,
+"avg_max_output": 3.300680160522461
+}
+]"backbone.body.layer2.3.conv3"[
+{
+"min_input": 0.0,
+"max_input": 6.00581693649292,
+"min_output": -1.741917610168457,
+"max_output": 2.034249782562256,
+"avg_min_input": 0.0,
+"avg_max_input": 5.751803874969482,
+"avg_min_output": -1.6204309463500977,
+"avg_max_output": 1.8747272491455078
+}
+]"backbone.body.layer2.3.relu"[
+{
+"min_input": 0.0,
+"max_input": 14.49044418334961,
+"min_output": 0.0,
+"max_output": 14.49044418334961,
+"avg_min_input": 0.0,
+"avg_max_input": 8.738258361816406,
+"avg_min_output": 0.0,
+"avg_max_output": 8.738258361816406
+}
+]"backbone.body.layer3"[
+{
+"min_input": 0.0,
+"max_input": 14.49044418334961,
+"min_output": 0.0,
+"max_output": 12.241806030273438,
+"avg_min_input": 0.0,
+"avg_max_input": 13.853063583374023,
+"avg_min_output": 0.0,
+"avg_max_output": 10.673068046569824
+}
+]"backbone.body.layer3.0"[
+{
+"min_input": 0.0,
+"max_input": 14.49044418334961,
+"min_output": 0.0,
+"max_output": 11.600842475891113,
+"avg_min_input": 0.0,
+"avg_max_input": 13.853063583374023,
+"avg_min_output": 0.0,
+"avg_max_output": 10.994836807250977
+}
+]"backbone.body.layer3.0.conv1"[
+{
+"min_input": 0.0,
+"max_input": 14.49044418334961,
+"min_output": -5.002607822418213,
+"max_output": 7.252772808074951,
+"avg_min_input": 0.0,
+"avg_max_input": 13.853063583374023,
+"avg_min_output": -4.827366352081299,
+"avg_max_output": 6.8185553550720215
+}
+]"backbone.body.layer3.0.conv2"[
+{
+"min_input": 0.0,
+"max_input": 11.56452751159668,
+"min_output": -5.274136066436768,
+"max_output": 4.486988544464111,
+"avg_min_input": 0.0,
+"avg_max_input": 10.278667449951172,
+"avg_min_output": -5.151761054992676,
+"avg_max_output": 4.343042373657227
+}
+]"backbone.body.layer3.0.conv3"[
+{
+"min_input": 0.0,
+"max_input": 5.654635429382324,
+"min_output": -2.0661845207214355,
+"max_output": 2.7900407314300537,
+"avg_min_input": 0.0,
+"avg_max_input": 5.479121208190918,
+"avg_min_output": -1.7857017517089844,
+"avg_max_output": 2.4728026390075684
+}
+]"backbone.body.layer3.0.relu"[
+{
+"min_input": 0.0,
+"max_input": 11.600842475891113,
+"min_output": 0.0,
+"max_output": 11.600842475891113,
+"avg_min_input": 0.0,
+"avg_max_input": 8.91754150390625,
+"avg_min_output": 0.0,
+"avg_max_output": 8.91754150390625
+}
+]"backbone.body.layer3.0.downsample"[
+{
+"min_input": 0.0,
+"max_input": 14.49044418334961,
+"min_output": -4.535057067871094,
+"max_output": 6.6301188468933105,
+"avg_min_input": 0.0,
+"avg_max_input": 13.853063583374023,
+"avg_min_output": -3.5659584999084473,
+"avg_max_output": 6.256076812744141
+}
+]"backbone.body.layer3.0.downsample.0"[
+{
+"min_input": 0.0,
+"max_input": 14.49044418334961,
+"min_output": -2.355783700942993,
+"max_output": 3.4400086402893066,
+"avg_min_input": 0.0,
+"avg_max_input": 13.853063583374023,
+"avg_min_output": -2.1217093467712402,
+"avg_max_output": 3.2414164543151855
+}
+]"backbone.body.layer3.1"[
+{
+"min_input": 0.0,
+"max_input": 11.600842475891113,
+"min_output": 0.0,
+"max_output": 10.545275688171387,
+"avg_min_input": 0.0,
+"avg_max_input": 10.994836807250977,
+"avg_min_output": 0.0,
+"avg_max_output": 9.834357261657715
+}
+]"backbone.body.layer3.1.conv1"[
+{
+"min_input": 0.0,
+"max_input": 11.600842475891113,
+"min_output": -3.5611801147460938,
+"max_output": 6.05203914642334,
+"avg_min_input": 0.0,
+"avg_max_input": 10.994836807250977,
+"avg_min_output": -3.1628427505493164,
+"avg_max_output": 5.010067462921143
+}
+]"backbone.body.layer3.1.conv2"[
+{
+"min_input": 0.0,
+"max_input": 7.057230472564697,
+"min_output": -4.985838890075684,
+"max_output": 4.3497161865234375,
+"avg_min_input": 0.0,
+"avg_max_input": 6.759522438049316,
+"avg_min_output": -4.365500450134277,
+"avg_max_output": 3.939039707183838
+}
+]"backbone.body.layer3.1.conv3"[
+{
+"min_input": 0.0,
+"max_input": 6.680069923400879,
+"min_output": -1.740647792816162,
+"max_output": 1.8243306875228882,
+"avg_min_input": 0.0,
+"avg_max_input": 6.117413520812988,
+"avg_min_output": -1.4815372228622437,
+"avg_max_output": 1.6375908851623535
+}
+]"backbone.body.layer3.1.relu"[
+{
+"min_input": 0.0,
+"max_input": 10.545275688171387,
+"min_output": 0.0,
+"max_output": 10.545275688171387,
+"avg_min_input": 0.0,
+"avg_max_input": 7.570430278778076,
+"avg_min_output": 0.0,
+"avg_max_output": 7.570430278778076
+}
+]"backbone.body.layer3.2"[
+{
+"min_input": 0.0,
+"max_input": 10.545275688171387,
+"min_output": 0.0,
+"max_output": 11.433087348937988,
+"avg_min_input": 0.0,
+"avg_max_input": 9.834357261657715,
+"avg_min_output": 0.0,
+"avg_max_output": 10.075604438781738
+}
+]"backbone.body.layer3.2.conv1"[
+{
+"min_input": 0.0,
+"max_input": 10.545275688171387,
+"min_output": -2.690581798553467,
+"max_output": 4.7930216789245605,
+"avg_min_input": 0.0,
+"avg_max_input": 9.834357261657715,
+"avg_min_output": -2.6378705501556396,
+"avg_max_output": 4.304843902587891
+}
+]"backbone.body.layer3.2.conv2"[
+{
+"min_input": 0.0,
+"max_input": 7.2091288566589355,
+"min_output": -3.5058679580688477,
+"max_output": 3.0258398056030273,
+"avg_min_input": 0.0,
+"avg_max_input": 6.595664024353027,
+"avg_min_output": -3.092236280441284,
+"avg_max_output": 2.8138701915740967
+}
+]"backbone.body.layer3.2.conv3"[
+{
+"min_input": 0.0,
+"max_input": 4.753765106201172,
+"min_output": -0.9817432761192322,
+"max_output": 1.6357110738754272,
+"avg_min_input": 0.0,
+"avg_max_input": 4.310596466064453,
+"avg_min_output": -0.9252262115478516,
+"avg_max_output": 1.5632842779159546
+}
+]"backbone.body.layer3.2.relu"[
+{
+"min_input": 0.0,
+"max_input": 11.433087348937988,
+"min_output": 0.0,
+"max_output": 11.433087348937988,
+"avg_min_input": 0.0,
+"avg_max_input": 6.993955135345459,
+"avg_min_output": 0.0,
+"avg_max_output": 6.993955135345459
+}
+]"backbone.body.layer3.3"[
+{
+"min_input": 0.0,
+"max_input": 11.433087348937988,
+"min_output": 0.0,
+"max_output": 11.835835456848145,
+"avg_min_input": 0.0,
+"avg_max_input": 10.075604438781738,
+"avg_min_output": 0.0,
+"avg_max_output": 10.256081581115723
+}
+]"backbone.body.layer3.3.conv1"[
+{
+"min_input": 0.0,
+"max_input": 11.433087348937988,
+"min_output": -2.65521240234375,
+"max_output": 3.7942745685577393,
+"avg_min_input": 0.0,
+"avg_max_input": 10.075604438781738,
+"avg_min_output": -2.4819352626800537,
+"avg_max_output": 3.409639358520508
+}
+]"backbone.body.layer3.3.conv2"[
+{
+"min_input": 0.0,
+"max_input": 7.326963424682617,
+"min_output": -2.158787250518799,
+"max_output": 2.4133667945861816,
+"avg_min_input": 0.0,
+"avg_max_input": 6.1347975730896,
+"avg_min_output": -2.00700044631958,
+"avg_max_output": 2.1370105743408203
+}
+]"backbone.body.layer3.3.conv3"[
+{
+"min_input": 0.0,
+"max_input": 4.808463096618652,
+"min_output": -1.031697392463684,
+"max_output": 1.7199716567993164,
+"avg_min_input": 0.0,
+"avg_max_input": 3.976043701171875,
+"avg_min_output": -0.9451578855514526,
+"avg_max_output": 1.1663005352020264
+}
+]"backbone.body.layer3.3.relu"[
+{
+"min_input": 0.0,
+"max_input": 11.835835456848145,
+"min_output": 0.0,
+"max_output": 11.835835456848145,
+"avg_min_input": 0.0,
+"avg_max_input": 6.788974285125732,
+"avg_min_output": 0.0,
+"avg_max_output": 6.788974285125732
+}
+]"backbone.body.layer3.4"[
+{
+"min_input": 0.0,
+"max_input": 11.835835456848145,
+"min_output": 0.0,
+"max_output": 13.504657745361328,
+"avg_min_input": 0.0,
+"avg_max_input": 10.256081581115723,
+"avg_min_output": 0.0,
+"avg_max_output": 11.65461254119873
+}
+]"backbone.body.layer3.4.conv1"[
+{
+"min_input": 0.0,
+"max_input": 11.835835456848145,
+"min_output": -2.7255234718322754,
+"max_output": 3.624251365661621,
+"avg_min_input": 0.0,
+"avg_max_input": 10.256081581115723,
+"avg_min_output": -2.495157241821289,
+"avg_max_output": 3.060641050338745
+}
+]"backbone.body.layer3.4.conv2"[
+{
+"min_input": 0.0,
+"max_input": 5.320376873016357,
+"min_output": -2.345627546310425,
+"max_output": 2.075925588607788,
+"avg_min_input": 0.0,
+"avg_max_input": 4.765057563781738,
+"avg_min_output": -1.9117263555526733,
+"avg_max_output": 1.9017207622528076
+}
+]"backbone.body.layer3.4.conv3"[
+{
+"min_input": 0.0,
+"max_input": 4.303928375244141,
+"min_output": -0.9009144306182861,
+"max_output": 1.4234906435012817,
+"avg_min_input": 0.0,
+"avg_max_input": 4.169747829437256,
+"avg_min_output": -0.7939260005950928,
+"avg_max_output": 1.0779469013214111
+}
+]"backbone.body.layer3.4.relu"[
+{
+"min_input": 0.0,
+"max_input": 13.504657745361328,
+"min_output": 0.0,
+"max_output": 13.504657745361328,
+"avg_min_input": 0.0,
+"avg_max_input": 6.863138675689697,
+"avg_min_output": 0.0,
+"avg_max_output": 6.863138675689697
+}
+]"backbone.body.layer3.5"[
+{
+"min_input": 0.0,
+"max_input": 13.504657745361328,
+"min_output": 0.0,
+"max_output": 12.241806030273438,
+"avg_min_input": 0.0,
+"avg_max_input": 11.65461254119873,
+"avg_min_output": 0.0,
+"avg_max_output": 10.673068046569824
+}
+]"backbone.body.layer3.5.conv1"[
+{
+"min_input": 0.0,
+"max_input": 13.504657745361328,
+"min_output": -2.4021072387695312,
+"max_output": 3.2034904956817627,
+"avg_min_input": 0.0,
+"avg_max_input": 11.65461254119873,
+"avg_min_output": -2.1966147422790527,
+"avg_max_output": 2.8147809505462646
+}
+]"backbone.body.layer3.5.conv2"[
+{
+"min_input": 0.0,
+"max_input": 6.266568183898926,
+"min_output": -2.5280323028564453,
+"max_output": 2.8795266151428223,
+"avg_min_input": 0.0,
+"avg_max_input": 5.4540815353393555,
+"avg_min_output": -2.1042287349700928,
+"avg_max_output": 2.0783376693725586
+}
+]"backbone.body.layer3.5.conv3"[
+{
+"min_input": 0.0,
+"max_input": 5.17030143737793,
+"min_output": -1.0871189832687378,
+"max_output": 1.0920475721359253,
+"avg_min_input": 0.0,
+"avg_max_input": 4.043729305267334,
+"avg_min_output": -0.9018036723136902,
+"avg_max_output": 0.8715864419937134
+}
+]"backbone.body.layer3.5.relu"[
+{
+"min_input": 0.0,
+"max_input": 12.241806030273438,
+"min_output": 0.0,
+"max_output": 12.241806030273438,
+"avg_min_input": 0.0,
+"avg_max_input": 6.723626136779785,
+"avg_min_output": 0.0,
+"avg_max_output": 6.723626136779785
+}
+]"backbone.body.layer4"[
+{
+"min_input": 0.0,
+"max_input": 12.241806030273438,
+"min_output": 0.0,
+"max_output": 16.36964225769043,
+"avg_min_input": 0.0,
+"avg_max_input": 10.673068046569824,
+"avg_min_output": 0.0,
+"avg_max_output": 14.651034355163574
+}
+]"backbone.body.layer4.0"[
+{
+"min_input": 0.0,
+"max_input": 12.241806030273438,
+"min_output": 0.0,
+"max_output": 15.477499008178711,
+"avg_min_input": 0.0,
+"avg_max_input": 10.673068046569824,
+"avg_min_output": 0.0,
+"avg_max_output": 14.223681449890137
+}
+]"backbone.body.layer4.0.conv1"[
+{
+"min_input": 0.0,
+"max_input": 12.241806030273438,
+"min_output": -2.4535675048828125,
+"max_output": 3.466864585876465,
+"avg_min_input": 0.0,
+"avg_max_input": 10.673068046569824,
+"avg_min_output": -2.360076427459717,
+"avg_max_output": 3.2245240211486816
+}
+]"backbone.body.layer4.0.conv2"[
+{
+"min_input": 0.0,
+"max_input": 6.980654716491699,
+"min_output": -1.9171111583709717,
+"max_output": 2.249140977859497,
+"avg_min_input": 0.0,
+"avg_max_input": 6.839140892028809,
+"avg_min_output": -1.6699573993682861,
+"avg_max_output": 1.9865659475326538
+}
+]"backbone.body.layer4.0.conv3"[
+{
+"min_input": 0.0,
+"max_input": 4.491062164306641,
+"min_output": -0.7968503832817078,
+"max_output": 1.1335506439208984,
+"avg_min_input": 0.0,
+"avg_max_input": 3.750929832458496,
+"avg_min_output": -0.6862002611160278,
+"avg_max_output": 1.03853440284729
+}
+]"backbone.body.layer4.0.relu"[
+{
+"min_input": 0.0,
+"max_input": 15.477499008178711,
+"min_output": 0.0,
+"max_output": 15.477499008178711,
+"avg_min_input": 0.0,
+"avg_max_input": 8.27125072479248,
+"avg_min_output": 0.0,
+"avg_max_output": 8.27125072479248
+}
+]"backbone.body.layer4.0.downsample"[
+{
+"min_input": 0.0,
+"max_input": 12.241806030273438,
+"min_output": -11.268912315368652,
+"max_output": 14.09029483795166,
+"avg_min_input": 0.0,
+"avg_max_input": 10.673068046569824,
+"avg_min_output": -9.565788269042969,
+"avg_max_output": 12.101264953613281
+}
+]"backbone.body.layer4.0.downsample.0"[
+{
+"min_input": 0.0,
+"max_input": 12.241806030273438,
+"min_output": -1.4976760149002075,
+"max_output": 1.4155813455581665,
+"avg_min_input": 0.0,
+"avg_max_input": 10.673068046569824,
+"avg_min_output": -1.2852141857147217,
+"avg_max_output": 1.3155782222747803
+}
+]"backbone.body.layer4.1"[
+{
+"min_input": 0.0,
+"max_input": 15.477499008178711,
+"min_output": 0.0,
+"max_output": 16.18531608581543,
+"avg_min_input": 0.0,
+"avg_max_input": 14.223681449890137,
+"avg_min_output": 0.0,
+"avg_max_output": 13.991808891296387
+}
+]"backbone.body.layer4.1.conv1"[
+{
+"min_input": 0.0,
+"max_input": 15.477499008178711,
+"min_output": -3.9906516075134277,
+"max_output": 6.7410759925842285,
+"avg_min_input": 0.0,
+"avg_max_input": 14.223681449890137,
+"avg_min_output": -3.6513314247131348,
+"avg_max_output": 5.5921831130981445
+}
+]"backbone.body.layer4.1.conv2"[
+{
+"min_input": 0.0,
+"max_input": 3.903526782989502,
+"min_output": -1.286605954170227,
+"max_output": 1.6905465126037598,
+"avg_min_input": 0.0,
+"avg_max_input": 3.356205701828003,
+"avg_min_output": -1.1685703992843628,
+"avg_max_output": 1.4819196462631226
+}
+]"backbone.body.layer4.1.conv3"[
+{
+"min_input": 0.0,
+"max_input": 2.0327794551849365,
+"min_output": -0.6754298210144043,
+"max_output": 0.5610180497169495,
+"avg_min_input": 0.0,
+"avg_max_input": 1.8843454122543335,
+"avg_min_output": -0.5633963942527771,
+"avg_max_output": 0.532677412033081
+}
+]"backbone.body.layer4.1.relu"[
+{
+"min_input": 0.0,
+"max_input": 16.18531608581543,
+"min_output": 0.0,
+"max_output": 16.18531608581543,
+"avg_min_input": 0.0,
+"avg_max_input": 6.4107866287231445,
+"avg_min_output": 0.0,
+"avg_max_output": 6.4107866287231445
+}
+]"backbone.body.layer4.2"[
+{
+"min_input": 0.0,
+"max_input": 16.18531608581543,
+"min_output": 0.0,
+"max_output": 16.36964225769043,
+"avg_min_input": 0.0,
+"avg_max_input": 13.991808891296387,
+"avg_min_output": 0.0,
+"avg_max_output": 14.651034355163574
+}
+]"backbone.body.layer4.2.conv1"[
+{
+"min_input": 0.0,
+"max_input": 16.18531608581543,
+"min_output": -2.99796724319458,
+"max_output": 5.197929859161377,
+"avg_min_input": 0.0,
+"avg_max_input": 13.991808891296387,
+"avg_min_output": -2.6154909133911133,
+"avg_max_output": 4.815216064453125
+}
+]"backbone.body.layer4.2.conv2"[
+{
+"min_input": 0.0,
+"max_input": 2.029419422149658,
+"min_output": -0.7526673078536987,
+"max_output": 1.1284799575805664,
+"avg_min_input": 0.0,
+"avg_max_input": 1.5757297277450562,
+"avg_min_output": -0.6653350591659546,
+"avg_max_output": 0.9481675624847412
+}
+]"backbone.body.layer4.2.conv3"[
+{
+"min_input": 0.0,
+"max_input": 2.455019235610962,
+"min_output": -0.4247479736804962,
+"max_output": 0.47013041377067566,
+"avg_min_input": 0.0,
+"avg_max_input": 1.5615243911743164,
+"avg_min_output": -0.34371471405029297,
+"avg_max_output": 0.37406978011131287
+}
+]"backbone.body.layer4.2.relu"[
+{
+"min_input": 0.0,
+"max_input": 16.36964225769043,
+"min_output": 0.0,
+"max_output": 16.36964225769043,
+"avg_min_input": 0.0,
+"avg_max_input": 5.929429054260254,
+"avg_min_output": 0.0,
+"avg_max_output": 5.929429054260254
+}
+]"backbone.fpn"[
+{
+"min_input": Infinity,
+"max_input": -Infinity,
+"min_output": Infinity,
+"max_output": -Infinity,
+"avg_min_input": 0.0,
+"avg_max_input": 0.0,
+"avg_min_output": 0.0,
+"avg_max_output": 0.0
+}
+]"backbone.fpn.inner_blocks"[
+{
+"min_input": Infinity,
+"max_input": -Infinity,
+"min_output": Infinity,
+"max_output": -Infinity,
+"avg_min_input": 0.0,
+"avg_max_input": 0.0,
+"avg_min_output": 0.0,
+"avg_max_output": 0.0
+}
+]"backbone.fpn.inner_blocks.0"[
+{
+"min_input": 0.0,
+"max_input": 3.245561361312866,
+"min_output": -0.9259634017944336,
+"max_output": 0.8905166983604431,
+"avg_min_input": 0.0,
+"avg_max_input": 2.933600902557373,
+"avg_min_output": -0.8824187517166138,
+"avg_max_output": 0.7974016666412354
+}
+]"backbone.fpn.inner_blocks.1"[
+{
+"min_input": 0.0,
+"max_input": 14.49044418334961,
+"min_output": -3.1455862522125244,
+"max_output": 3.257277488708496,
+"avg_min_input": 0.0,
+"avg_max_input": 13.853063583374023,
+"avg_min_output": -2.8318214416503906,
+"avg_max_output": 2.7994942665100098
+}
+]"backbone.fpn.inner_blocks.2"[
+{
+"min_input": 0.0,
+"max_input": 12.241806030273438,
+"min_output": -2.4295308589935303,
+"max_output": 2.6279704570770264,
+"avg_min_input": 0.0,
+"avg_max_input": 10.673068046569824,
+"avg_min_output": -2.1833267211914062,
+"avg_max_output": 2.1725592613220215
+}
+]"backbone.fpn.inner_blocks.3"[
+{
+"min_input": 0.0,
+"max_input": 16.36964225769043,
+"min_output": -5.337449073791504,
+"max_output": 5.947751045227051,
+"avg_min_input": 0.0,
+"avg_max_input": 14.651034355163574,
+"avg_min_output": -4.588898658752441,
+"avg_max_output": 4.899082183837891
+}
+]"backbone.fpn.layer_blocks"[
+{
+"min_input": Infinity,
+"max_input": -Infinity,
+"min_output": Infinity,
+"max_output": -Infinity,
+"avg_min_input": 0.0,
+"avg_max_input": 0.0,
+"avg_min_output": 0.0,
+"avg_max_output": 0.0
+}
+]"backbone.fpn.layer_blocks.0"[
+{
+"min_input": -6.242186069488525,
+"max_input": 6.839609622955322,
+"min_output": -9.404712677001953,
+"max_output": 8.776101112365723,
+"avg_min_input": -5.169036388397217,
+"avg_max_input": 5.823428153991699,
+"avg_min_output": -8.221590995788574,
+"avg_max_output": 8.297743797302246
+}
+]"backbone.fpn.layer_blocks.1"[
+{
+"min_input": -5.993544578552246,
+"max_input": 6.512411594390869,
+"min_output": -7.8443708419799805,
+"max_output": 7.509660243988037,
+"avg_min_input": -4.994744300842285,
+"avg_max_input": 5.539535045623779,
+"avg_min_output": -7.169654846191406,
+"avg_max_output": 6.975838661193848
+}
+]"backbone.fpn.layer_blocks.2"[
+{
+"min_input": -5.689974784851074,
+"max_input": 5.832770824432373,
+"min_output": -8.020668029785156,
+"max_output": 8.676812171936035,
+"avg_min_input": -4.670094966888428,
+"avg_max_input": 5.030440330505371,
+"avg_min_output": -7.172896385192871,
+"avg_max_output": 7.1175031661987305
+}
+]"backbone.fpn.layer_blocks.3"[
+{
+"min_input": -5.337449073791504,
+"max_input": 5.947751045227051,
+"min_output": -8.527713775634766,
+"max_output": 7.754520893096924,
+"avg_min_input": -4.588898658752441,
+"avg_max_input": 4.899082183837891,
+"avg_min_output": -7.034820556640625,
+"avg_max_output": 6.711747169494629
+}
+]"backbone.fpn.extra_blocks"[
+{
+"min_input": Infinity,
+"max_input": -Infinity,
+"min_output": Infinity,
+"max_output": -Infinity,
+"avg_min_input": 0.0,
+"avg_max_input": 0.0,
+"avg_min_output": 0.0,
+"avg_max_output": 0.0
+}
+]"rpn"[
+{
+"min_input": Infinity,
+"max_input": -Infinity,
+"min_output": Infinity,
+"max_output": -Infinity,
+"avg_min_input": 0.0,
+"avg_max_input": 0.0,
+"avg_min_output": 0.0,
+"avg_max_output": 0.0
+}
+]"rpn.anchor_generator"[
+{
+"min_input": Infinity,
+"max_input": -Infinity,
+"min_output": Infinity,
+"max_output": -Infinity,
+"avg_min_input": 0.0,
+"avg_max_input": 0.0,
+"avg_min_output": 0.0,
+"avg_max_output": 0.0
+}
+]"rpn.head"[
+{
+"min_input": Infinity,
+"max_input": -Infinity,
+"min_output": Infinity,
+"max_output": -Infinity,
+"avg_min_input": 0.0,
+"avg_max_input": 0.0,
+"avg_min_output": 0.0,
+"avg_max_output": 0.0
+}
+]"rpn.head.conv"[
+{
+"min_input": -9.404712677001953,
+"max_input": 8.776101112365723,
+"min_output": -14.796990394592285,
+"max_output": 21.562780380249023,
+"avg_min_input": -7.326756954193115,
+"avg_max_input": 7.093745708465576,
+"avg_min_output": -9.465453147888184,
+"avg_max_output": 10.758512496948242
+}
+]"rpn.head.cls_logits"[
+{
+"min_input": 0.0,
+"max_input": 21.562780380249023,
+"min_output": -45.65350341796875,
+"max_output": 11.69230842590332,
+"avg_min_input": 0.0,
+"avg_max_input": 10.758512496948242,
+"avg_min_output": -24.02199363708496,
+"avg_max_output": 7.075549602508545
+}
+]"rpn.head.bbox_pred"[
+{
+"min_input": 0.0,
+"max_input": 21.562780380249023,
+"min_output": -2.133302927017212,
+"max_output": 1.6021325588226318,
+"avg_min_input": 0.0,
+"avg_max_input": 10.758512496948242,
+"avg_min_output": -1.2658261060714722,
+"avg_max_output": 1.0342626571655273
+}
+]"roi_heads"[
+{
+"min_input": Infinity,
+"max_input": -Infinity,
+"min_output": Infinity,
+"max_output": -Infinity,
+"avg_min_input": 0.0,
+"avg_max_input": 0.0,
+"avg_min_output": 0.0,
+"avg_max_output": 0.0
+}
+]"roi_heads.box_roi_pool"[
+{
+"min_input": Infinity,
+"max_input": -Infinity,
+"min_output": -8.198198318481445,
+"max_output": 7.983870506286621,
+"avg_min_input": 0.0,
+"avg_max_input": 0.0,
+"avg_min_output": -4.051325798034668,
+"avg_max_output": 4.043894290924072
+}
+]"roi_heads.box_head"[
+{
+"min_input": -8.198198318481445,
+"max_input": 7.983870506286621,
+"min_output": 0.0,
+"max_output": 9.463250160217285,
+"avg_min_input": -4.051325798034668,
+"avg_max_input": 4.043894290924072,
+"avg_min_output": 0.0,
+"avg_max_output": 3.5248711109161377
+}
+]"roi_heads.box_head.fc6"[
+{
+"min_input": -8.198198318481445,
+"max_input": 7.983870506286621,
+"min_output": -20.782962799072266,
+"max_output": 19.244300842285156,
+"avg_min_input": -4.051325798034668,
+"avg_max_input": 4.043894290924072,
+"avg_min_output": -9.815838813781738,
+"avg_max_output": 8.05349063873291
+}
+]"roi_heads.box_head.fc7"[
+{
+"min_input": 0.0,
+"max_input": 19.244300842285156,
+"min_output": -9.463859558105469,
+"max_output": 9.463250160217285,
+"avg_min_input": 0.0,
+"avg_max_input": 8.05349063873291,
+"avg_min_output": -3.639805555343628,
+"avg_max_output": 3.5248711109161377
+}
+]"roi_heads.box_predictor"[
+{
+"min_input": 0.0,
+"max_input": 9.463250160217285,
+"min_output": Infinity,
+"max_output": -Infinity,
+"avg_min_input": 0.0,
+"avg_max_input": 3.5248711109161377,
+"avg_min_output": 0.0,
+"avg_max_output": 0.0
+}
+]"roi_heads.box_predictor.cls_score"[
+{
+"min_input": 0.0,
+"max_input": 9.463250160217285,
+"min_output": -7.64546537399292,
+"max_output": 24.73271369934082,
+"avg_min_input": 0.0,
+"avg_max_input": 3.5248711109161377,
+"avg_min_output": -4.140608310699463,
+"avg_max_output": 14.671415328979492
+}
+]"roi_heads.box_predictor.bbox_pred"[
+{
+"min_input": 0.0,
+"max_input": 9.463250160217285,
+"min_output": -4.198117256164551,
+"max_output": 4.775819778442383,
+"avg_min_input": 0.0,
+"avg_max_input": 3.5248711109161377,
+"avg_min_output": -1.4460842609405518,
+"avg_max_output": 1.517179012298584
+}
+]"roi_heads.mask_roi_pool"[
+{
+"min_input": Infinity,
+"max_input": -Infinity,
+"min_output": -7.888996124267578,
+"max_output": 7.0719804763793945,
+"avg_min_input": 0.0,
+"avg_max_input": 0.0,
+"avg_min_output": -4.6353230476379395,
+"avg_max_output": 4.427711009979248
+}
+]"roi_heads.mask_head"[
+{
+"min_input": -7.888996124267578,
+"max_input": 7.0719804763793945,
+"min_output": 0.0,
+"max_output": 16.030519485473633,
+"avg_min_input": -4.6353230476379395,
+"avg_max_input": 4.427711009979248,
+"avg_min_output": 0.0,
+"avg_max_output": 7.1232781410217285
+}
+]"roi_heads.mask_head.mask_fcn1"[
+{
+"min_input": -7.888996124267578,
+"max_input": 7.0719804763793945,
+"min_output": -12.53300666809082,
+"max_output": 12.685440063476562,
+"avg_min_input": -4.6353230476379395,
+"avg_max_input": 4.427711009979248,
+"avg_min_output": -6.30825662612915,
+"avg_max_output": 6.698844909667969
+}
+]"roi_heads.mask_head.relu1"[
+{
+"min_input": 0.0,
+"max_input": 12.685440063476562,
+"min_output": 0.0,
+"max_output": 12.685440063476562,
+"avg_min_input": 0.0,
+"avg_max_input": 6.698844909667969,
+"avg_min_output": 0.0,
+"avg_max_output": 6.698844909667969
+}
+]"roi_heads.mask_head.mask_fcn2"[
+{
+"min_input": 0.0,
+"max_input": 12.685440063476562,
+"min_output": -8.550542831420898,
+"max_output": 9.568182945251465,
+"avg_min_input": 0.0,
+"avg_max_input": 6.698844909667969,
+"avg_min_output": -4.834508419036865,
+"avg_max_output": 4.9248738288879395
+}
+]"roi_heads.mask_head.relu2"[
+{
+"min_input": 0.0,
+"max_input": 9.568182945251465,
+"min_output": 0.0,
+"max_output": 9.568182945251465,
+"avg_min_input": 0.0,
+"avg_max_input": 4.9248738288879395,
+"avg_min_output": 0.0,
+"avg_max_output": 4.9248738288879395
+}
+]"roi_heads.mask_head.mask_fcn3"[
+{
+"min_input": 0.0,
+"max_input": 9.568182945251465,
+"min_output": -6.7683281898498535,
+"max_output": 7.9920973777771,
+"avg_min_input": 0.0,
+"avg_max_input": 4.9248738288879395,
+"avg_min_output": -3.8302457332611084,
+"avg_max_output": 3.8573379516601562
+}
+]"roi_heads.mask_head.relu3"[
+{
+"min_input": 0.0,
+"max_input": 7.9920973777771,
+"min_output": 0.0,
+"max_output": 7.9920973777771,
+"avg_min_input": 0.0,
+"avg_max_input": 3.8573379516601562,
+"avg_min_output": 0.0,
+"avg_max_output": 3.8573379516601562
+}
+]"roi_heads.mask_head.mask_fcn4"[
+{
+"min_input": 0.0,
+"max_input": 7.9920973777771,
+"min_output": -3.835366725921631,
+"max_output": 16.030519485473633,
+"avg_min_input": 0.0,
+"avg_max_input": 3.8573379516601562,
+"avg_min_output": -1.909021258354187,
+"avg_max_output": 7.1232781410217285
+}
+]"roi_heads.mask_head.relu4"[
+{
+"min_input": 0.0,
+"max_input": 16.030519485473633,
+"min_output": 0.0,
+"max_output": 16.030519485473633,
+"avg_min_input": 0.0,
+"avg_max_input": 7.1232781410217285,
+"avg_min_output": 0.0,
+"avg_max_output": 7.1232781410217285
+}
+]"roi_heads.mask_predictor"[
+{
+"min_input": 0.0,
+"max_input": 16.030519485473633,
+"min_output": -14.227803230285645,
+"max_output": 14.836854934692383,
+"avg_min_input": 0.0,
+"avg_max_input": 7.1232781410217285,
+"avg_min_output": -7.318502426147461,
+"avg_max_output": 5.937470436096191
+}
+]"roi_heads.mask_predictor.conv5_mask"[
+{
+"min_input": 0.0,
+"max_input": 16.030519485473633,
+"min_output": -3.383930206298828,
+"max_output": 17.219924926757812,
+"avg_min_input": 0.0,
+"avg_max_input": 7.1232781410217285,
+"avg_min_output": -1.12807297706604,
+"avg_max_output": 7.291499137878418
+}
+]"roi_heads.mask_predictor.relu"[
+{
+"min_input": 0.0,
+"max_input": 17.219924926757812,
+"min_output": 0.0,
+"max_output": 17.219924926757812,
+"avg_min_input": 0.0,
+"avg_max_input": 7.291499137878418,
+"avg_min_output": 0.0,
+"avg_max_output": 7.291499137878418
+}
+]"roi_heads.mask_predictor.mask_fcn_logits"[
+{
+"min_input": 0.0,
+"max_input": 17.219924926757812,
+"min_output": -14.227803230285645,
+"max_output": 14.836854934692383,
+"avg_min_input": 0.0,
+"avg_max_input": 7.291499137878418,
+"avg_min_output": -7.318502426147461,
+"avg_max_output": 5.937470436096191
+}
+]

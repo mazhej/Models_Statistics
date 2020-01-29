@@ -18,6 +18,7 @@ from torchvision.models.detection.transform import GeneralizedRCNNTransform
 from coco_utils import get_coco_api_from_dataset
 import torchvision.models as models
 import torch.nn as nn
+from torchvision.models.detection.transform import GeneralizedRCNNTransform
 # 
 
 model_names = sorted(name for name in models.__dict__
@@ -44,7 +45,7 @@ class ImageList(object):
         cast_tensor = self.tensors.to(*args, **kwargs)
         return ImageList(cast_tensor, self.image_sizes)
 
-from torchvision.models.detection.transform import GeneralizedRCNNTransform
+
 
 class IdentityTransform(GeneralizedRCNNTransform):
    
@@ -100,8 +101,10 @@ def dg_main(args):
 
     device = torch.device(args.device)
 
-    dataset_test, num_classes = get_dataset(args.dataset, "val", get_transform(train=False), args.data_path)
-    test_sampler = torch.utils.data.SequentialSampler(dataset_test)
+    dataset_test, num_classes = get_dataset(args.dataset, "val", get_transform(train=False), args.data_path)  
+    test_sampler = torch.utils.data.RandomSampler(dataset_test,replacement=True,num_samples=3)
+    #test_sampler = torch.utils.data.SequentialSampler(dataset_test)
+    
 
 
     data_loader_test = torch.utils.data.DataLoader(
@@ -220,7 +223,7 @@ def evaluate_bin(model, data_loader, device, bin_folder ):
 
 
 @torch.no_grad()
-@torch.jit.unused
+# @torch.jit.unused
 def evaluate(model, data_loader, device):
     
     hookF = {}
@@ -237,7 +240,7 @@ def evaluate(model, data_loader, device):
     metric_logger = utils.MetricLogger(delimiter="  ")
     header = 'Test:'
 
-    coco = get_coco_api_from_dataset(data_loader.dataset)
+    coco = get_coco_api_from_dataset(data_loader.dataset)         
     iou_types = _get_iou_types(model)
     coco_evaluator = CocoEvaluator(coco, iou_types)
 
@@ -269,17 +272,19 @@ def evaluate(model, data_loader, device):
     torch.set_num_threads(n_threads)
 
     stat = {}
-    for key, value in hookF.items():
+    for key, statObj in hookF.items():
        
 
 
-        stat[key] = [{"min_input": float(value.min_input.cpu().numpy()), 
-         "max_input": float(value.max_input.cpu().numpy()), "min_output": float(value.min_output.cpu().numpy()),
-         "max_output": float(value.max_output.cpu().numpy()),
-          "avg_min_input": float(value.avg_min_input.cpu().numpy()),
-           "avg_max_input": float(value.avg_max_input.cpu().numpy()),
-            "avg_min_output": float(value.avg_min_output.cpu().numpy()),
-             "avg_max_output": float(value.avg_max_output.cpu().numpy())}]
+        stat[key] = [{  "min_input": float(statObj.input_stat.min), 
+                        "max_input": float(statObj.input_stat.max), 
+                        "min_output": float(statObj.output_stat.min),
+                        "max_output": float(statObj.output_stat.max),
+                        "avg_min_input": float(statObj.input_stat.avg_min),
+                        "avg_max_input": float(statObj.input_stat.avg_max),
+                        "avg_min_output": float(statObj.output_stat.avg_min),
+                        "avg_max_output": float(statObj.output_stat.avg_max)
+                        }]
     #save the dictionary as a json file
     with open('Pytorch_Obj_Det_Stat.json','w')as fp:
        for k,v in stat.items():

@@ -1,92 +1,44 @@
 import torch
 import numpy as np
-import torchvision.models.detection as detection
-from torchvision.models.detection.transform import GeneralizedRCNNTransform
-from torch import nn
-from collections import OrderedDict
-import torchvision
+
+class tensor_stat():
+    def __init__(self):
+        self.min = np.inf
+        self.max = - np.inf
+        self.sum_min = 0
+        self.sum_max = 0                           
+        self.avg_min = 0                  
+        self.avg_max = 0          
+        self.count = 0
+
+    def update_stat(self, tensor):
+        if torch.min(tensor) < self.min:
+            self.min = torch.min(tensor)
+        if torch.max(tensor) > self.max:
+            self.max = torch.max(tensor)
+        for b in range(len(tensor)):
+            self.sum_min += torch.min(tensor[b])     
+            self.sum_max += torch.max(tensor[b])
+            self.count += 1
+        self.avg_min = self.sum_min /self.count
+        self.avg_max = self.sum_max / self.count
+
 class statistics():
     def __init__(self, module):                                                
         self.hook = module.register_forward_hook(self.hook_fn)
-        self.min_input = np.inf
-        self.max_input = - np.inf
-        self.min_output = np.inf
-        self.max_output = -np.inf
-        self.sum_min_input = 0
-        self.sum_max_input = 0
-        self.sum_min_output = 0
-        self.sum_max_output = 0                           
-        self.avg_min_input = 0                  
-        self.avg_max_input = 0          
-        self.avg_min_output = 0                                   
-        self.avg_max_output = 0 
-        self.count_input = 0
-        self.count_output = 0
+        self.input_stat = tensor_stat()
+        self.output_stat = tensor_stat()
 
     def hook_fn(self,module,input,output):  
-        if (not isinstance(module,torchvision.ops.feature_pyramid_network.LastLevelMaxPool)) and (not isinstance(module,torchvision.ops.feature_pyramid_network.FeaturePyramidNetwork)) and (not isinstance(module,torchvision.models.detection.backbone_utils.BackboneWithFPN)) and (not isinstance(module,GeneralizedRCNNTransform))and (not isinstance(module,torchvision.models.detection.roi_heads.RoIHeads))and (not isinstance(module,torchvision.models.detection.mask_rcnn.MaskRCNN)):
         
-            if type(input) == tuple or type(input) == list:                   
-                for i in range(len(input)): 
-                    if (input[i]) is not None and (type(input[i]) == list or type(input[i])==torch.Tensor):  
-                        for j in range(len(input[i])):
-                            if type(input[i][j])== torch.Tensor :
-                                if torch.min(input[i][j]) < self.min_input:  
-                                    self.min_input = torch.min(input[i][j])      
-                                if torch.max(input[i][j]) > self.max_input: 
-                                    self.max_input = torch.max(input[i][j])
-                        
-                                self.sum_min_input += torch.min(input[i][j])  
-                                self.sum_max_input += torch.max(input[i][j])
-                                self.count_input += 1
-                        self.avg_min_input = self.sum_min_input / self.count_input
-                        self.avg_max_input =  self.sum_max_input / self.count_input
+        
+        if type(input) == tuple or type(input) == list:                   
+            for i in range(len(input)): 
+                if type(input[i])==torch.Tensor:  
+                    self.input_stat.update_stat(input[i])
+        
+        if type(output) == torch.Tensor:
+            self.output_stat.update_stat(output)
 
-            if type(output) == torch.Tensor:
-                if torch.min(output) < self.min_output:
-                    self.min_output = torch.min(output)
-                if torch.max(output) > self.max_output:
-                    self.max_output = torch.max(output)
-                for b in range(len(output)):
-                    self.sum_min_output += torch.min(output[b])     
-                    self.sum_max_output += torch.max(output[b])
-                    self.count_output += 1
-                self.avg_min_input = self.sum_min_input / self.count_output
-                self.avg_max_input =  self.sum_max_input / self.count_output
-                self.avg_min_output = self.sum_min_output /self.count_output
-                self.avg_max_output = self.sum_max_output / self.count_output
-            
-            elif isinstance(output,dict): 
-                for i in range(len(output)):
-                    if torch.min(output[i]) < self.min_output:
-                        self.min_output = torch.min(output[i])
-                    if torch.max(output[i]) > self.max_output:
-                        self.max_output = torch.max(output[i])
-
-                    for j in range(len(output[i])):
-                        self.sum_min_output += torch.min(output[i][j])     
-                        self.sum_max_output += torch.max(output[i][j])
-                        self.count_output += 1
-                    self.avg_min_input = self.sum_min_input / self.count_output
-                    self.avg_max_input =  self.sum_max_input / self.count_output
-                    self.avg_min_output = self.sum_min_output /self.count_output
-                    self.avg_max_output = self.sum_max_output / self.count_output
-
-
-
-            elif isinstance(output,tuple):
-                for i in range(len(output)):                
-                    for j in range(len(output[i])):
-                        if torch.min(output[i][j]) < self.min_output:
-                            self.min_output = torch.min(output[i][j])
-                        if torch.max(output[i][j]) > self.max_output:
-                            self.max_output = torch.max(output[i][j])
-
-            elif isinstance(output,list):     
-                for i in range(len(output)):
-                    if torch.min(output[i]) < self.min_output:
-                        self.min_output = torch.min(output[i])
-                    if torch.max(output[i]) > self.max_output:
-                        self.max_output = torch.max(output[i])
     def close(self):
         self.hook.remove()

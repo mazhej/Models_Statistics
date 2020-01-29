@@ -16,7 +16,8 @@ import torchvision.transforms as transforms
 import torchvision.datasets as datasets
 import torchvision.models as models
 
-from Stat_Hook import *
+#from Stat_Hook import *
+from Stat_Hook_Obj_Dec import *
 
 #getting all the pytorch models name
 model_names = sorted(name for name in models.__dict__
