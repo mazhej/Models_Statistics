@@ -285,11 +285,11 @@ def evaluate(model, data_loader, device):
                         "avg_min_output": float(statObj.output_stat.avg_min),
                         "avg_max_output": float(statObj.output_stat.avg_max)
                         }]
+    del stat['']
     #save the dictionary as a json file
     with open('Pytorch_Obj_Det_Stat.json','w')as fp:
        for k,v in stat.items():
-            json.dump(k,fp,indent = 0)
-            json.dump(v,fp,indent= 0)
+            json.dump(stat,fp,indent=0)
 
 
 
@@ -305,7 +305,7 @@ if __name__ == "__main__":
     parser.add_argument('--bin',default="/home/maziar/WA/Git/coco_preprocess_eval/images_eval_bin")
     parser.add_argument('--model', default='maskrcnn_resnet50_fpn', help='model')
     parser.add_argument('--device', default='cuda', help='device')
-    parser.add_argument('-b', '--batch-size', default=32, type=int)
+    parser.add_argument('-b', '--batch-size', default=256, type=int)
     parser.add_argument('--output-dir', default='./images_eval_bin', help='path where to save')
     parser.add_argument('-j', '--workers', default=16, type=int, metavar='N',
                         help='number of data loading workers (default: 16)')

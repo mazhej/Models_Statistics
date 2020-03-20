@@ -176,6 +176,7 @@ def validate(val_loader, model,criterion,args):
            "avg_max_input": float(value.avg_max_input.cpu().numpy()),
             "avg_min_output": float(value.avg_min_output.cpu().numpy()),
              "avg_max_output": float(value.avg_max_output.cpu().numpy())}]
+    
     #save the dictionary as a json file
     with open('imagenet_statistics.json','w')as fp:
        for k,v in stat.items():
